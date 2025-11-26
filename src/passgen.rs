@@ -41,8 +41,6 @@ pub fn generate_password(password: &mut String, rng: &mut ThreadRng, length: u8)
 }
 
 fn generate_initial_chars(password: &mut String, rng: &mut ThreadRng) {
-    
-
     let mut result = pick_chars(rng);
     result.shuffle(rng);
 
